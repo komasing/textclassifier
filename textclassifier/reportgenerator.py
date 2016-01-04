@@ -6,7 +6,6 @@ from .featureextractor import FeatureExtractor
 from .clfbase import ClfBase, get_sig_features
 from estnltk import analyze
 
-from sklearn.cluster import Ward
 from sklearn.feature_selection import chi2
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support, precision_score, recall_score, f1_score
 from sklearn.base import TransformerMixin
