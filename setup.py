@@ -5,7 +5,7 @@ import sys
 
 setup(
     name = "estnltk-textclassifier",
-    version = "1.2.2",
+    version = "1.3.0+stacc",
     packages = find_packages(),
     package_data = {
         'textclassifier.tests': ['*.txt', '*.def', '*.csv', '*.xlsx']
@@ -21,8 +21,8 @@ setup(
     # we have fixed dependency versions to guarantee, what works
     # however, you can probably safely install newer versions of the dependencies
     install_requires = [
-        'estnltk==1.2.2',                  # estnltk dependency (contains also various other dependencies needed)
-        'scikit-learn==0.16.1'             # Python machine learning library
+        'estnltk>=1.3.0',                  # estnltk dependency (contains also various other dependencies needed)
+        'scikit-learn>=0.16.1'             # Python machine learning library
         ],
 
     classifiers = ['Intended Audience :: Developers',
@@ -30,8 +30,7 @@ setup(
                    'Intended Audience :: Science/Research',
                    'Intended Audience :: Information Technology',
                    'Operating System :: OS Independent',
-                   'Programming Language :: Python :: 2.7',
-                   'Programming Language :: Python :: 3.4',
+                   'Programming Language :: Python :: 3.5',
                    'Topic :: Scientific/Engineering',
                    'Topic :: Scientific/Engineering :: Artificial Intelligence',
                    'Topic :: Scientific/Engineering :: Information Analysis',
