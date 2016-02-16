@@ -3,6 +3,7 @@
 from __future__ import unicode_literals, print_function, absolute_import
 
 from .featureextractor import FeatureExtractor
+from .settings import NUM_CORES
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import StratifiedKFold
@@ -31,7 +32,7 @@ class ClfBase(object):
         -------
         new sklearn compatible classifier.
         """
-        return LogisticRegression(penalty='l1')
+        return LogisticRegression(penalty='l1',n_jobs=NUM_CORES)
 
     @property
     def feature_extractor(self):

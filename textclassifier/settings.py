@@ -8,7 +8,7 @@ from .synunifier import SynUnifier, SynFileReader
 import codecs
 from copy import copy
 
-NUM_CORES = 1
+NUM_CORES = 4
 
 
 class Settings(dict):
